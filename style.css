@@ -1,0 +1,209 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #5C4033; /* Coffee brown */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #EEE;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(50% - 20px); /* Two columns layout */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #6A4533;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #8B4513;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#cart li:last-child {
+    border-bottom: none;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+}
+
+.cart-item-quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 10px;
+}
+
+.cart-item-quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart-item-quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+.remove-from-cart {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.remove-from-cart:hover {
+    background-color: #c82333;
+}
+
+#bill-output {
+    border: 1px dashed #999;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; /* Preserve formatting for pre */
+    text-align: left; /* Align text inside pre to left */
+}
+
+#bill-output h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#checkout-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+#checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#checkout-form input[type="text"],
+#checkout-form input[type="tel"],
+#checkout-form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#checkout-form button, #new-order-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Add some space above button */
+}
+
+#checkout-form button:hover, #new-order-btn:hover {
+    background-color: #218838;
+}
+
+#new-order-btn {
+    background-color: #007bff; /* Blue */
+    margin-top: 20px; /* Space from bill */
+}
+
+#new-order-btn:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
